@@ -1,0 +1,16 @@
+# 中间输出文件（56万个，不提交）
+all_output/l*.txt
+all_output/.task_list.txt
+all_output/.pid
+all_output/run.log
+
+# 原始 FITS（改提交拆分后的两份）
+absorption_map.fits
+
+# Python
+__pycache__/
+*.pyc
+
+# 临时文件
+*.swp
+*~
