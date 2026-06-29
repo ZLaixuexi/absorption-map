@@ -1,6 +1,7 @@
 # Absorption Map — 银河系 γ 射线吸收谱数据立方体
 
 ## 简介
+参考文章https://doi.org/10.3847/1538-4357/ae48f4
 
 本项目计算了银河系不同视线方向 (l, b) 和距离 d 上的 γ 光子吸收效应，输出为 **e⁻ᵗ (survival probability)** 随能量 E 的变化曲线。
 
