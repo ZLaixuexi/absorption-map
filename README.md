@@ -75,7 +75,13 @@ python3 plot_skymap.py -d 0.5 -e 1,10,100,1e4  # 多面板
 python3 plot_skymap.py -d 0.5                   # 全部81个能量（9×9面板）
 ```
 
-## 物理模型
+## 效果展示
+
+### d = 8.5 kpc, E = 300 TeV 银道天图
+
+![skymap d=8.5 kpc E=300 TeV](skymap_d8.5_E300TeV.png)
+
+
 
 - 计算程序：`all8_cmb_galpropall_interpolationN_argvZ`（C 源码见 `.c` 文件）
 - 吸收模型基于银河系星际辐射场（CMB + 尘埃辐射 + 星光）与气体分布
