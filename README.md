@@ -81,7 +81,30 @@ python3 plot_skymap.py -d 0.5                   # 全部81个能量（9×9面板
 - 吸收模型基于银河系星际辐射场（CMB + 尘埃辐射 + 星光）与气体分布
 - 输出值：**e⁻ᵗ**（光子存活概率）。1.0 = 无吸收，接近 0 = 几乎完全吸收
 
-## 依赖 (Python)
+## 依赖
+
+### 系统库
+
+计算程序 `all8_cmb_galpropall_interpolationN_argvZ` 依赖 **CFITSIO** 库（读取 FITS 文件）：
+
+```bash
+# CentOS / RHEL
+yum install cfitsio
+
+# Ubuntu / Debian
+apt install libcfitsio-dev
+
+# Conda
+conda install -c conda-forge cfitsio
+```
+
+安装后可检查：
+```bash
+ldd all8_cmb_galpropall_interpolationN_argvZ | grep cfitsio
+# 应输出类似: libcfitsio.so.X => /path/to/libcfitsio.so.X
+```
+
+### Python
 
 ```
 numpy  astropy  matplotlib
